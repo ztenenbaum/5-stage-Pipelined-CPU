@@ -12,3 +12,6 @@ Includes:
 - ALU module
 - Testbench with example instructions
 - Simulation scripts for Icarus Verilog / GTKWave
+
+
+IN PROGRESS
