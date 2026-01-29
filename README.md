@@ -13,5 +13,5 @@ Includes:
 - Testbench with example instructions
 - Simulation scripts for Icarus Verilog / GTKWave
 
-
+Note that Instruction Memory is currently abstracted for simplicity
 IN PROGRESS

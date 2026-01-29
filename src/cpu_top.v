@@ -43,7 +43,14 @@ ex_stage ex_stage (
     .rd2(rd2),
     .we(we),
     .wa(wa),
-    .wd(wd)
+    .wd(wd),
+    .loadSel(load),
+    .storeSel(store),
+    .branch(branch),
+    .alu(alu_result), //outputs
+    .beq(beq),
+    .blt(blt),
+    .mask(mask)
 );
 
 mem_stage mem_stage (
