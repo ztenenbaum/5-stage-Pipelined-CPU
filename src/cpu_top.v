@@ -53,8 +53,17 @@ ex_stage ex_stage (
     .mask(mask)
 );
 
-mem_stage mem_stage (
+always @(posedge clk) begin
+    store_mem <= store;
+end
 
+mem_stage mem_stage (
+    .clk(clk), //inputs
+    .rst(rst),
+    .store(store_mem),
+    .alu(alu_result),
+    .mask(mask),
+    .mem_out(mem) //outputs
 );
 
 wb_stage wb_stage (
